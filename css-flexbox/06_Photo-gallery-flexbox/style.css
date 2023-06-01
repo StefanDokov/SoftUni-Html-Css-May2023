@@ -1,0 +1,31 @@
+body {
+    background: #ccc;
+    padding: 2em;
+}
+
+body,
+section ul, 
+section ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    justify-content: center;
+}
+
+section {
+    flex: 0 0 70%;
+}
+
+section ul {
+    justify-content: space-between;
+    gap: 5em;
+}
+
+section ul li {
+    border: 5px solid black;
+    align-items: center;
+    background: #fff;
+    padding: 1em;
+   
+}
