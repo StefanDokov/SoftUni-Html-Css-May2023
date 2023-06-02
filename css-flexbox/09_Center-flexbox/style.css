@@ -1,0 +1,18 @@
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 5px #afaeae;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex: 0 0 28%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    align-items: flex-start;
+}
