@@ -1,0 +1,89 @@
+body {
+    padding: 10em;
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 99vw;
+}
+
+.cards-layout{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 48vw;
+    flex: 1 1 auto;
+
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+.card img {
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.card section,
+.card footer {
+    padding: 15px;
+}
+
+.card section {
+    
+    flex-grow: 1;
+}
+.card footer {
+    border-top: 2px solid black;
+    flex-grow: 1;
+}
+
+.masonry {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200vh;
+    flex: 0 1 20em;
+    transform: translateX(-93%);
+}
+
+h2 {
+   flex: 3 0 100%;
+   text-align: center;
+   transform: translateX(-19.5%);
+}
+h2:nth-of-type(2){
+    transform: translateX(-21%);
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 220vh;
+    flex: 0 1 auto;
+}
+
+.flex .card {
+    flex-direction: column;
+    height: 700px;
+}
+.flex .card img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex .card footer {
+  flex: 0 11 auto;
+}
+
+
