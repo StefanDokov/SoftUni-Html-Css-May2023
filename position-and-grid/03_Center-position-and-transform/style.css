@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(238, 238, 238);
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgb(255, 255, 255) ;
+    width: 25em;
+    height: 30em;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
+    
+}
+
+a {
+    
+    background: rgb(0, 153, 0) ;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: stretch;
+    
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-items: end;
+
+}
+
+img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15em;
+    border-radius: 5px 5px 0 0 ;
+}
+
+div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 0.3fr 2fr 0.5fr;
+    
+    
+    
+}
+
+p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    overflow: auto;
+}
+
