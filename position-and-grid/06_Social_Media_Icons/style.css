@@ -1,0 +1,39 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+    width: 100%;
+}
+
+a {
+    border-radius: 50%;
+    background: rgb(240, 238, 238);
+    padding: 10px;
+    color: black;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.one:hover:hover {
+   color: rgb(62, 62, 243);
+}
+.two:hover:hover {
+   color: rgb(124, 205, 252);
+}
+.three:hover:hover {
+   color: indianred;
+}
+.four:hover:hover {
+   color: rgb(34, 132, 243);
+}
+.five:hover:hover {
+   color: rgb(91, 91, 252);
+}
