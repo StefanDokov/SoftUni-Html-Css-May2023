@@ -1,0 +1,53 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+}
+.blur-load::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, .1);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+
+}
+
+.blur-load {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.blur-load.loaded::before {
+    content: none;
+    animation: none;
+}
+
+.blur-load.loaded > img {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+
+.blur-load > img {
+    opacity: 0;
+}

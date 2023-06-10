@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lazy Images Project</title>
+</head>
+<body style="margin: 0">
+    <div class="grid">
+        <div class="blur-load" style="background-image: url(imgs/phot3-small.avif);">
+
+            <img src="imgs/phot3.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot4-small.avif);">
+
+            <img src="imgs/phot4.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot5-small.avif)">
+
+            <img src="imgs/phot5.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot6-small.avif)">
+
+            <img src="imgs/phot6.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot7-small.avif);">
+
+            <img src="imgs/phot7.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot8-small.avif);">
+
+            <img src="imgs/phot8.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot9-small.avif);">
+
+            <img src="imgs/phot9.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot10-small.avif);">
+
+            <img src="imgs/phot10.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot11-small.avif);">
+
+            <img src="imgs/phot11.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot12-small.avif);">
+
+            <img src="imgs/phot12.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot13-small.avif);">
+
+            <img src="imgs/phot13.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot14-small.avif);">
+
+            <img src="imgs/phot14.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot15-small.avif);">
+
+            <img src="imgs/phot15.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot16-small.avif);">
+
+            <img src="imgs/phot16.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot2-small.avif);">
+
+            <img src="imgs/phot2.avif" loading="lazy"/>
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/phot1-small.avif);">
+
+            <img src="imgs/phot1.avif" loading="lazy"/>
+        </div>
+    </div>
+    <script>
+        const blurDivs = document.querySelectorAll('.blur-load');
+        blurDivs.forEach(div => {
+            const img = div.querySelector('img')
+
+            function loaded() {
+                div.classList.add('loaded')
+            }
+            if (img.complete) {
+                loaded()
+            } else {
+                img.addEventListener('load', loaded)
+            }
+        })
+    </script>
+</body>
+</html>
