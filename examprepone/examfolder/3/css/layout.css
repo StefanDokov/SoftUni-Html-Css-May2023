@@ -1,0 +1,241 @@
+.container {
+    background: #ade2df;
+    margin-top: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.signbtn {
+    background: #ade2df;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.downlaod {
+    padding: 10em;
+    width: 100%;
+    height: 600px;
+}
+
+.downlaod h1,
+.downlaod p {
+    text-align: center;
+}
+
+.downlaod h1 {
+    font-size: 5em;
+}
+
+.downlaod p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.dwnldbtns {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.dwnldbtns button {
+    background: black;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.dwnldbtns button i {
+    margin-right: 5px;
+}
+
+.subscribers {
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.card {
+    flex: 0 0 20%;
+    height: 50%;
+}
+
+.card h3,
+.card p {
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 3em;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.card:nth-of-type(1),
+.card:nth-of-type(2) {
+    border-right: 2px solid gainsboro;
+}
+
+.phone {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.imager {
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+    border: 2px dotted grey;
+}
+
+.imager img {
+     width: 100%;
+     height: 100%;
+}
+
+.phonetext {
+    width: 25%;
+}
+.phonetext h2,
+.phonetext h4 {
+    padding-bottom: 0.5em;
+}
+
+.phonetext p,
+.phonetext a {
+    padding-bottom: 1em;
+}
+
+.phonetext a {
+    margin-top: 10px;
+    color: black; 
+    text-decoration: underline; 
+}
+.phonetext i {
+    text-decoration: underline; 
+
+}
+
+.setup {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.setupcards {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+
+}
+
+.setup a {
+    background: #ade2df;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.setup h2 {
+    text-align: center;
+}
+.cards-conatiner {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 50%;
+    gap: 5em;
+}
+
+.onecard {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.onecard:nth-of-type(2),
+.onecard:nth-of-type(3) {
+    padding-left: 1em;
+    border-left: 1px solid gainsboro;
+}
+
+.onecard span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.onecard ul{
+    list-style: none;
+}
+
+.onecard li {
+    padding: 5px 0;
+}
+
+.onecard i {
+    margin-right: 5px;
+}
+.expand {
+    padding: 40px;
+    flex: 0 0 50%;
+    background: #ade2df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    
+}
+
+.expand h4{
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font: 12px/1.5 Inter;
+    color: rgb(133, 132, 132);
+    background: rgb(207, 207, 207);
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    height: 800px;
+}
+
+.card { 
+    flex: 0 0 30%;
+    height:730px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.card img{
+    height: 300px;
+}
+
+.content {
+   width: 85%;
+   padding: 25px 0;
+   margin: 0 auto; 
+}
+
+.content  h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.content  h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.content  p {
+    font-size: 20px;
+    margin-bottom: 30px; 
+}
+
+.card-footer {
+    border-top: 2px solid grey;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+   
+}
+
+.card-footer div:first-of-type {
+    flex: 0 0 15%; 
+}
+
+.card-footer div img {
+    width: 100%;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.downtext {
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.downtext span {
+   flex: 0 0 20%;
+}
+
+.downtext span:first-of-type {
+    font-size: 16px;
+    color: black;
+}
+
