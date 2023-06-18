@@ -1,5 +1,51 @@
 @media (max-width: 600px) {
-    .home-container {
+    .home-navbar-container {
+        flex-direction: row;
+    }
+    .home-navbar-container {
+        justify-content: center;
+    }
+    .home-cta-btn {
+        padding: 10px 15px;
+    }
+    .home-hero {
+        flex-direction: column;
+        
+    }
+    .home-hero-text-container  {
         width: 100%;
+    }
+    .home-hero img {
+        order: -1;
+        width: 100%;
+    }
+    .home-cta-btn2 {
+        align-self: center;
+        padding: 10px 15px;
+    }
+    .home-heading-container {
+        width: 100%;
+    }
+
+    .home-cards-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-cards-container > * {
+        
+        width: 100%;
+    }
+    .Card-Text {
+        text-align: center;
+        font-size: 15px;
+    }
+    .home-features {
+        height: auto;
+    }
+
+    .home-stats {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
