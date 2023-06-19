@@ -17,7 +17,7 @@ body {
     font: 12px/1.5 Inter;
     color: rgb(133, 132, 132);
     background: rgb(207, 207, 207);
-    height: 99vh;
+    min-height: 99vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,17 +32,15 @@ img {
 
 .container {
     max-width: 1800px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3em;
-    height: 800px;
 }
 
 .card { 
     flex: 0 0 30%;
-    height:730px;
+    height: 100%;
     box-shadow: 5px 5px 20px grey;
 }
 
@@ -83,28 +81,31 @@ img {
 }
 
 .card-footer div:first-of-type {
-    flex: 0 0 15%; 
+    flex: 0 0 10%;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .card-footer div img {
     width: 100%;
-    height: 60px;
-    border-radius: 50%;
+    height: auto;  
 }
 
 .downtext {
-    flex: 0 0 80%;
+    flex: 0 0 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.downtext span {
-   flex: 0 0 20%;
+.downtext span:nth-of-type(2) {
+   flex: 0 0 18%;
 }
 
 .downtext span:first-of-type {
     font-size: 16px;
     color: black;
+    flex: 0 0 20%;  
 }
 
