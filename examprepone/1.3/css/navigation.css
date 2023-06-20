@@ -1,0 +1,33 @@
+.site-header{
+    border-bottom: 4px solid rgb(196, 194, 194);
+    background: #fff;
+    padding: 1.5em;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+nav ul {
+    display: flex;
+    justify-self: flex-end;
+    list-style: none;
+    gap: 1.5em;
+    padding-right: 1em;
+}
+
+nav li, 
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px
+}
+
+nav > a {
+    padding-left: 7em;
+}

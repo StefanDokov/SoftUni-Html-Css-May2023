@@ -1,0 +1,8 @@
+html {
+    font: 14px/ 1.5 Arial, sans-serif
+}
+
+
+body, input {
+    font: inherit;
+}

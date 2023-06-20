@@ -1,0 +1,333 @@
+.site {
+    background: #85dcff;
+}
+
+.donate-section {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.donate-text {
+     flex: 0 0 50%;
+     padding-left: 10em;
+}
+
+.donate-text h2{
+  margin-bottom: 30px;
+  font-size: 3em; 
+} 
+.donate-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.donate-img {
+    flex: 0 1 30%;
+    height: 100%;
+    
+}
+
+.donate-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.donate-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.donate-btns button:nth-of-type(1){
+    border-radius: 5px;
+    border: 1px solid black;
+    flex: 0 0 35%;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.donate-btns button:nth-of-type(2){
+    border-radius: 5px;
+    border: none;
+    flex: 0 0 55%;
+    padding: 20px 0;
+    font-weight: bold;
+    color: white;
+    background: #000;
+}
+
+.svg-container {
+    background: #fff;
+    height: 570px;
+
+}
+
+.svg-container h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+}
+.svg-container > p {
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    flex: 0 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 2em;
+}
+
+.card svg {
+    flex: 0 0 50%;
+    fill: #85dcff;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.2em;
+}
+
+.mission-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.mission-container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+.mission-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5em;
+    width: 60%;
+}
+
+.mission-cards p {
+    font-size: 20px;
+    flex: 0 0 30%;
+}
+
+.mission-container button {
+    margin: 0 auto;
+    padding: 10px;
+    width: 12%;
+    color: white;
+    font-weight: bold;
+    background: #000;
+    border-radius: 5px;
+    
+}
+
+.animal-images {
+    background: #fff;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.animal-images h2 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    gap: 2em;
+
+}
+
+.images img {
+    flex: 0 0 20%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 50px;
+}
+
+.info h3 {
+    font-size: 2em;
+}
+
+.info-box {
+    flex: 0 0 25%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    border-left: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    
+}
+
+.info-box p:nth-of-type(1) {
+    flex: 0 0 100%;
+    padding: 15px;
+    background: #85dcff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.info-box p:nth-of-type(2) {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+
+.contact-box {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+.cntct-img {
+    flex: 0 0 50%;
+    height: 100%;
+    padding-left: 5px;
+}
+
+.cntct-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.email-box {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.email-box h3 {
+    font-size: 2.5em;
+    flex: 0 0 25%;
+}
+
+.email-box p {
+    font-size: 18px;
+    flex: 0 0 15%;
+    width: 80%;
+}
+
+.email-box form {
+    flex: 0 0 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.email-box label {
+    display: none;
+}
+.email-box input {
+    width: 100%;
+    padding: 15px;
+}
+.email-box button {
+    background: #000;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 50px;
+}
+
+footer ul {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+footer li {
+    flex: 1 1 30%;
+    height: 30px;
+    width: 30px;  
+}
+
+footer a {
+    color: #000;
+}
+
+footer i {
+    font-size: 30px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+
+
+
