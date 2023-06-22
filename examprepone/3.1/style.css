@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font: 16px/ 1.5 Mulish;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    flex: 0 0 45%;
+    min-height: 55vh;
+    background-image: url(./images/form-background.png);
+    background-size: cover;
+    background-position: right 44% bottom 0;
+    border-radius: 20px;
+    box-shadow: 15px 10px 10px grey;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 3em;
+    margin: 40px 0 20px 0;
+}
+
+.form-container h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.form-container form {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.form-container form label:nth-of-type(1),
+.form-container form label:nth-of-type(2),
+.form-container form input:nth-of-type(1),
+.form-container form input:nth-of-type(2)
+{
+    flex: 0 0 45%;
+}
+
+.form-container form label:nth-of-type(2) ~ label, 
+.form-container form input:nth-of-type(2) ~ input {
+   flex: 0 0 98%;
+}
+
+.form-container form button {
+    margin: 0 auto;
+    padding: 15px 20px;
+    background: darkred;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 20px;
+    width: 42%;
+    line-height: 0.7;
+}
+
+.form-container form input {
+    padding: 10px 0;
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+    
+}
+
+.form-container form input[type="checkbox"] {
+    margin-right: 7px;
+}
