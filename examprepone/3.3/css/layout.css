@@ -1,0 +1,118 @@
+
+
+.container {
+    width: 100%;
+    min-height: 340vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tophalf {
+    flex: 1 1 50%;
+    background-image: url('../image/image.jpg');
+    background-size: 2000px;
+    background-position: left -65px bottom 50%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.bottomhalf {
+    flex: 1 1 50%;
+    display: flex;
+}
+
+.titlediv {
+    width: 400px;
+    height: auto;
+    border: 2px solid grey;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 2px 5px 5px 2px grey;
+    padding: 2em;
+    line-height: 1.2;
+    text-shadow: 2px 2px grey;
+}
+.titlediv h1 {
+    width: 60%;
+    font-size: 5em;
+    font-family: abril fatce;
+    font-weight: bolder;
+    letter-spacing: -4px;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 3px solid white;
+    
+}
+
+.titlediv h3 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.siderbox {
+    width: 550px;
+    height: auto;
+    background: linear-gradient(0.25turn, #a9abac, #ececec, #dad8d8);
+    text-shadow: 2px 2px grey;
+    text-align: right;
+    padding: 40px 35px 30px 40px;
+    box-shadow: 2px 5px 5px 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.siderbox p:first-of-type {
+    font-size: 7em;
+    text-align: right;
+    color: grey;
+    height: 70px;
+    
+}
+
+.siderbox p:nth-of-type(2) {
+    font-size: 26px;
+    color: white;
+    text-align: right; 
+}
+
+.leftsidertext {
+    flex: 0 0 70%;
+}
+.rightsidertext {
+    flex: 0 0 30%;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5em 2em 0 2em;
+    gap: 2em;
+}
+
+.carder {
+    flex: 0 0 15%;
+    line-height: 1;
+    
+}
+
+.carder h1 {
+    font-size: 8em;
+    color: white;
+    font-weight: 100;
+}
+
+.carder h3 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+
