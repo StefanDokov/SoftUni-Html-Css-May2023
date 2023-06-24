@@ -56,12 +56,12 @@
 }
 
 .siderbox {
-    width: 550px;
+    width: 520px;
     height: auto;
     background: linear-gradient(0.25turn, #a9abac, #ececec, #dad8d8);
     text-shadow: 2px 2px grey;
     text-align: right;
-    padding: 40px 35px 30px 40px;
+    padding: 20px 35px 20px 10px;
     box-shadow: 2px 5px 5px 2px grey;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
 .siderbox p:nth-of-type(2) {
     font-size: 26px;
     color: white;
-    text-align: right; 
+    text-align: right;
 }
 
 .leftsidertext {
