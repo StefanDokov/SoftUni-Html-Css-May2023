@@ -11,7 +11,7 @@
     flex: 1 1 50%;
     background-image: url('../image/image.jpg');
     background-size: 2000px;
-    background-position: left -65px bottom 50%;
+    background-position: left -65px bottom 54%;
     display: flex;
     position: relative;
     justify-content: flex-end;
@@ -50,6 +50,7 @@
 
 .titlediv h3 {
     font-size: 1.8em;
+    font-family: abril fatce;
     text-transform: uppercase;
     font-weight: 300;
     margin: 20px 0;
@@ -84,10 +85,15 @@
 }
 
 .leftsidertext {
-    flex: 0 0 70%;
+    flex: 0 0 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 .rightsidertext {
-    flex: 0 0 30%;
+    flex: 0 0 25%;
     background: gainsboro;
     display: flex;
     flex-direction: column;
@@ -114,5 +120,96 @@
     font-size: 1.8em;
     font-weight: 200;
 }
+
+.topdiv {
+    flex: 0 0 76%;
+    padding-top: 5em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.bottomdiv {
+    flex: 0 0 24%;
+    width: 100%;
+    border-top: 4px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cntctdiv {
+    flex: 0 0 30%;
+    font-size: 30px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+    gap: 1em;
+}
+.cntctdiv span {
+    font-weight: bold;
+}
+
+.bottomdiv form {
+    flex: 0 0 30%;
+    width: 80%;
+
+}
+.bottomdiv form input:first-of-type {
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background: gainsboro;
+    font-size: 26px;
+    margin-right: 20px;
+}
+.bottomdiv form input:first-of-type::placeholder {
+    color: white;
+
+}
+
+.bottomdiv form input:nth-of-type(2) {
+    padding: 20px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    font-size: 26px;
+    background: olivedrab;
+    color: white;
+}
+
+.topdiv h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: abril fatce;
+    letter-spacing: -4px;
+    text-shadow: 2px 2px grey;
+    
+}
+
+.zone {
+    font-size: 30px;
+}
+
+.zone i {
+    margin-right: 10px;
+}
+
+.zone span {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+hr {
+    border-top: 2px solid gainsboro;
+}
+
 
 
