@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font: 16px/ 1.5 Courgette;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 237, 237);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.title {
+    height: 10%;
+}
+
+.title h1{
+    width: 100%;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.title h2{
+    width: 110%;
+    text-transform: uppercase;
+    color: rgb(231, 50, 50);
+    font-size: 2em;
+    margin-top: 0;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+.card {
+    flex: 0 0 33%;
+    height: 35em;
+    border-radius: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+   border-radius: 15px 15px 0 0;
+   
+   height: 50%;
+   overflow: hidden;
+}
+.bottompart {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.bottompart h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0;
+    height: 20%;
+}
+
+.bottompart p::before {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    border-top: 2px solid red;
+    padding-bottom: 5px;
+}
+.bottompart a {
+    height: 20%;
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+.bottompart i {
+    color: red;
+}
+
+.bottompart p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 0;
+    height: 60%;
+}
+.allcards {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
