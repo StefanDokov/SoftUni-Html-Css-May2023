@@ -1,0 +1,95 @@
+@media (width <= 600px) {
+    body {
+        
+        margin: 0;
+    }
+    main {
+      width: 100%;  
+    }
+    .left-to-right {
+        padding: 50px;
+        height: 600px;
+    }
+
+    main .left-to-right article {
+        border-radius: 25%;
+        width: 410px;
+        height: 70%;
+        margin: 0 auto;
+        padding: 40px;
+        padding-bottom: 70px;
+    }
+    main .left-to-right:nth-of-type(1) {
+        height: 530px;
+        padding: 50px;
+    }
+    main .left-to-right:nth-of-type(1) article {
+       width: 370px;
+       height: 70%;
+       margin: 0 auto;
+    }
+
+    main .left-to-right article button {
+       display: none;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header p {
+        font-size: 1.3rem;
+    }
+    main .left-to-right article > p{
+        font-size: 1rem;
+    }
+    main section:nth-child(2) {
+        flex-direction: column;
+        padding: 20px;
+    }
+    main section:nth-child(2) button {
+        display: none;
+    }
+    main section:nth-child(2) article > p {
+        font-size: 1.1rem;
+    }
+    main section.left-to-right:nth-child(3) article {
+        width: 380px;
+        height: 40%;
+    }
+    main section.left-to-right:nth-child(3) article h1 {
+        font-size: 2rem
+    }
+    main section.left-to-right:nth-child(3) article > p {
+        font-size: 1rem;
+    }
+
+
+    main section:nth-child(4) {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section:nth-child(4) article {
+        width: 70%;
+    }
+
+    form {
+       width: 400px;
+       height: 500px;
+     
+    }
+  
+    section form label input, section form textarea {
+        width: 100%;
+
+    }
+
+    form input[type='submit'] {
+        margin-top: 20px;
+        display: block;
+        
+    }
+
+}
