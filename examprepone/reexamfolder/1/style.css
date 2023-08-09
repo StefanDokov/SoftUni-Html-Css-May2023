@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 12px/1 Inter;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+    background-image: url(./images/background.jpg);
+}
+
+main {
+    width: 80%;
+    height: 95%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.horizontals {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 68%;
+    gap: 2em;
+    height: 800px;
+}
+
+.verticals {
+    flex: 1 1 29%;
+    height: 800px;
+}
+
+.horizontals article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 4em;
+    gap: 20px;
+    height: 50%;
+}
+
+.left {
+    flex: 0 1 60%;
+    font-size: 18px;
+
+}
+.left i {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+.left p {
+    color: rgb(97, 97, 97);
+    margin-bottom: 30px;
+}
+.left span {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.right {
+    flex: 0 1 30%; 
+}
+
+.right img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.verticals article {
+    padding: 4em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 18px;
+}
+.verticals article i {
+    font-size: 7em;
+}
+
+.verticals article p {
+    color: rgb(97, 97, 97);
+    width: 90%;
+}
+
+.personal {
+    border-top: 2px solid rgb(219, 217, 217);
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+.personal img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.personal div {
+    width: 200px;
+}
+
+.personal span {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: black;
+}
+
+.personal p:last-of-type {
+    margin-top: 5px;
+    font-size: 12px;
+}
