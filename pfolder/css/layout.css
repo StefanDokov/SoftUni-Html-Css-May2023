@@ -44,7 +44,7 @@ nav ul a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 7em;
 }
 
 .textandpicture {
@@ -109,6 +109,13 @@ nav ul a:hover {
   }
 }
 
+.stacks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+
 .stacks p {
     font-size: 18px;
     font-weight: 500;
@@ -116,4 +123,35 @@ nav ul a:hover {
 
 .stacks span {
     margin-left: 25px;
+}
+
+.slider {
+  width: 400px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.slider-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-list li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider-list li img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
