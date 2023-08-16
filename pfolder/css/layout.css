@@ -86,7 +86,7 @@ nav ul a:hover {
 }
 
 .box {
-  background: url(https://www.freecodecamp.org/news/content/images/2023/02/image3-1.png);
+  background: url(../images/myavatar.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -154,4 +154,110 @@ nav ul a:hover {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.aboutmesection {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abtcontainer {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+.abtimage {
+  flex: 0 0 37%;
+  height: 370px;
+  position: relative;
+}
+
+.abtimage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+
+.rotatediv {
+  position: absolute;
+  bottom: -70px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgb(248, 248, 111);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(https://w7.pngwing.com/pngs/476/1015/png-transparent-man-guy-male-business-laptop-computer-ethnic-working-office-thumbnail.png);
+  background-size: cover;
+  border-radius: 50%;
+  filter: brightness(1.3) contrast(1.3);
+}
+
+.texter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+
+.texter p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@keyframes rotateText {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.texter span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 75px;
+}
+
+
+.abttext {
+  flex: 0 0 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.abttext h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(20, 215, 241);
+}
+
+.abttext h3 {
+  font-weight: 800;
+}
+
+.abttext p {
+  font-size: 16px;
 }
