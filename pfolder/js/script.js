@@ -18,3 +18,23 @@ const textz = document.querySelector('.texter p');
 textz.innerHTML = textz.innerText.split("").map(
   (char, i) => `<span style="transform:rotate(${i * 14}deg)">${char}</span>`
 ).join("")
+
+
+let scrollContainer = document.querySelector(".sliderdiv");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  scrollContainer.scrollLeft += evt.deltaY;
+});
+
+nextBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 1040;
+});
+
+backBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft -= 1040;
+});
