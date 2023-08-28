@@ -1,9 +1,16 @@
 nav {
-  box-shadow: 1px 3px 5px gainsboro;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 4em;
+  -webkit-box-shadow: 0 0 6px #696969;
+  box-shadow: 0 0 6px #696969;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add your preferred background color */
+  z-index: 100;
 }
 
 .logo {
@@ -336,4 +343,117 @@ nav ul a:hover {
   filter: grayscale(0);
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.projects {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7em;
+}
+
+.projectsContainer {
+  width: 60%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4em;
+}
+
+.projectsContainer h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(20, 215, 241);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.projectsContainer h2 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  
+}
+
+.projectCard {
+  border-radius: 15px;
+  background: rgb(252, 251, 251);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  gap: 1em;
+  -webkit-box-shadow: 0 0 10px #696969;
+  box-shadow: 0 0 10px #696969;
+}
+
+.projectImage {
+  border-radius: 15px;
+  flex: 0 0 60%;
+  overflow: hidden;
+  height: 350px;
+  -webkit-box-shadow: 0 0 10px #696969;
+  box-shadow: 0 0 10px #696969;
+}
+
+.projectImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 37%;
+  height: 300px;
+}
+
+.projectInfo h4 {
+  text-transform: uppercase;
+}
+
+.projectInfo p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(128, 126, 126);
+  text-align: center;
+}
+
+.toolsUsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toolsUsed p {
+  -webkit-box-shadow: 0 0 10px #696969;
+  box-shadow: 0 0 10px #696969;
+  color: black;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+
+.projectLinks a{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   color: black;
+}
+
+.projectLinks i {
+  font-size: 25px;
+}
+
+.projectCard:nth-of-type(odd) .projectImage {
+  order: 2;
+}
+
+.projectCard:nth-of-type(odd) .projectInfo {
+  order: 1;
 }
