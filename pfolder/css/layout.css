@@ -457,3 +457,7 @@ nav ul a:hover {
 .projectCard:nth-of-type(odd) .projectInfo {
   order: 1;
 }
+
+.contactSection {
+  background: rgb(243, 243, 243);
+}
