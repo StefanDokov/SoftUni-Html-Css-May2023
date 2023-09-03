@@ -556,3 +556,24 @@ footer {
 .linkove a:hover {
   transform: scale(1.2);
 }
+
+
+@media (width <= 900px) {
+  .landingcontainer {
+    height: auto;
+    padding: 10em;
+  }
+
+  .textandpicture {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textcontainer {
+    order: 2;
+  }
+
+  .wrapper {
+    order: 1;
+  }
+}
