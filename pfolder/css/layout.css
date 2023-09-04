@@ -165,7 +165,7 @@ nav ul a:hover {
 
 .aboutmesection {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,7 +556,61 @@ footer {
 .linkove a:hover {
   transform: scale(1.2);
 }
+@media (width <= 1200px){
+  .aboutmesection {
+    height: auto;
+    padding: 5em 0;
+  }
 
+  .abtcontainer {
+    flex-direction: column;
+    gap: 10em;
+  }
+
+  .abttext {
+     text-align: center;
+  }
+
+  .certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8em 2em;
+  }
+
+  .certificatestext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .certificatesdiv {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .sliderdiv {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  #backBtn, 
+  #nextBtn {
+  max-width: 50px;
+  width: 10%;
+  max-height: 50px;
+  height: 10%;
+  margin: 5px;
+}
+
+  .sliderdiv div {
+    grid-template-columns: 100%;
+  }
+}
 
 @media (width <= 900px) {
   .landingcontainer {
@@ -598,40 +652,5 @@ footer {
     text-underline-offset: 15px;
   }
 
-  .aboutmesection {
-    height: auto;
-    padding: 5em 0;
-  }
-
-  .abtcontainer {
-    flex-direction: column;
-    gap: 10em;
-  }
-
-  .abttext {
-     text-align: center;
-  }
-
-  .certificates {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .certificatestext {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
- 
-  .sliderdiv {
-    max-width: 600px;
-  }
-  .sliderdiv div {
-    grid-template-columns: 1fr;
-  }
+  
 }
