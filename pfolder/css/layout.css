@@ -563,10 +563,16 @@ footer {
     height: auto;
     padding: 10em;
   }
+  nav ul {
+    display: none;
+  }
 
   .textandpicture {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .textcontainer {
@@ -575,5 +581,57 @@ footer {
 
   .wrapper {
     order: 1;
+  }
+
+  .stacks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stacks span {
+    display: none;
+  }
+
+  .stacks p {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+  }
+
+  .aboutmesection {
+    height: auto;
+    padding: 5em 0;
+  }
+
+  .abtcontainer {
+    flex-direction: column;
+    gap: 10em;
+  }
+
+  .abttext {
+     text-align: center;
+  }
+
+  .certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .certificatestext {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ 
+  .sliderdiv {
+    max-width: 600px;
+  }
+  .sliderdiv div {
+    grid-template-columns: 1fr;
   }
 }
