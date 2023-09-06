@@ -354,11 +354,12 @@ nav ul a:hover {
 }
 
 .projectsContainer {
-  width: 60%;
+  width: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 4em;
 }
 
@@ -377,6 +378,8 @@ nav ul a:hover {
 }
 
 .projectCard {
+  max-width: 60%;
+  min-width: 870px;
   border-radius: 15px;
   background: rgb(252, 251, 251);
   display: flex;
@@ -476,7 +479,7 @@ nav ul a:hover {
    display: flex;
    flex-direction: column;
    gap: 3em;
-   padding: 2em;
+   padding: 2em 1em;
 }
 
 .contactText h4 {
@@ -489,18 +492,19 @@ nav ul a:hover {
 .circles {
   display: flex;
   align-items: center;
-  gap: 8em;
+  gap: 4em;
 }
 
 .circleCard {
   display: flex;
   align-items: center;
   gap: 1.5em;
+  min-width: 250px;
 }
 
 .coninfo {
-  width: 72px;
-  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -659,4 +663,43 @@ footer {
   .footerContainer h4 {
     font-size: 17px;
   }
+
+  .projectsText h3{
+    text-align: center;
+  }
+
+  .projects {
+    padding: 3em 1em;
+  }
+
+  .projectsContainer {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .projectCard {
+    min-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+
+  .contactContainer {
+    width: 85%;
+  }
+
+  .contactContainer h4,
+  .contactContainer {
+   text-align: center;
+  }
+
+  .circles {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .circleCard {
+    flex-direction: column;
+  }
+
 }
