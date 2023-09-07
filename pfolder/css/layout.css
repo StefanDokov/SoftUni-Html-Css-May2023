@@ -181,7 +181,9 @@ nav ul a:hover {
 }
 
 .abtimage {
-  flex: 0 0 37%;
+  flex: 0 0 370px;
+  min-width: 200px;
+  min-height: 200px;
   height: 370px;
   position: relative;
 }
@@ -361,6 +363,11 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   gap: 4em;
+}
+
+.projectsText {
+  max-width: 60%;
+  min-width: 60%;
 }
 
 .projectsContainer h3 {
@@ -560,6 +567,26 @@ footer {
 .linkove a:hover {
   transform: scale(1.2);
 }
+
+
+@media (width <= 1500px) {
+  .projectsText,
+  .projectsText h3,
+  .certificatestext,
+  .certificatestext h3 {
+    text-align: center;
+  }
+  .certificatestext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+}
+
 @media (width <= 1200px){
   .aboutmesection {
     height: auto;
@@ -614,6 +641,11 @@ footer {
   .sliderdiv div {
     grid-template-columns: 100%;
   }
+
+  .contactContainer {
+    width: 85%;
+  }
+  
 }
 
 @media (width <= 900px) {
