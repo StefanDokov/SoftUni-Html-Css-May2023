@@ -43,6 +43,56 @@ nav ul a:hover {
   color: rgb(20, 215, 241);
 }
 
+nav .toggle_btn {
+  color: #757474;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 10px #696969;
+  box-shadow: 0 0 10px #9c9c9c;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  color: #747373;
+  font-size: 1.2rem;
+}
+
+.dropdown_menu a:hover {
+  color: rgb(20, 215, 241);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .landingcontainer {
   width: 100%;
   height: 99vh;
@@ -124,12 +174,12 @@ nav ul a:hover {
 }
 
 .stacks p {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .stacks span {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .slider {
@@ -152,7 +202,6 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .slider-list li img {
@@ -195,7 +244,6 @@ nav ul a:hover {
   display: block;
 }
 
-
 .rotatediv {
   position: absolute;
   bottom: -70px;
@@ -232,10 +280,10 @@ nav ul a:hover {
 }
 
 @keyframes rotateText {
-  0%{
+  0% {
     transform: rotate(360deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -246,7 +294,6 @@ nav ul a:hover {
   font-size: 1.2em;
   transform-origin: 0 75px;
 }
-
 
 .abttext {
   flex: 0 0 50%;
@@ -307,7 +354,6 @@ nav ul a:hover {
   overflow: scroll;
 }
 
-
 .sliderdiv div {
   width: 100%;
   display: grid;
@@ -334,7 +380,7 @@ nav ul a:hover {
   margin: 30px auto;
 }
 
-#backBtn, 
+#backBtn,
 #nextBtn {
   width: 50px;
   height: 50px;
@@ -348,7 +394,7 @@ nav ul a:hover {
 }
 
 .projects {
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,7 +427,6 @@ nav ul a:hover {
 .projectsContainer h2 {
   font-size: 2em;
   margin-bottom: 50px;
-  
 }
 
 .projectCard {
@@ -452,12 +497,11 @@ nav ul a:hover {
   margin-bottom: 30px;
 }
 
-
-.projectLinks a{
-   text-decoration: none;
-   font-size: 18px;
-   font-weight: 500;
-   color: black;
+.projectLinks a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
 }
 
 .projectLinks i {
@@ -482,11 +526,11 @@ nav ul a:hover {
 }
 
 .contactContainer {
-   width: 60%;
-   display: flex;
-   flex-direction: column;
-   gap: 3em;
-   padding: 2em 1em;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em 1em;
 }
 
 .contactText h4 {
@@ -568,7 +612,6 @@ footer {
   transform: scale(1.2);
 }
 
-
 @media (width <= 1500px) {
   .projectsText,
   .projectsText h3,
@@ -584,10 +627,9 @@ footer {
     align-items: center;
     text-align: center;
   }
-  
 }
 
-@media (width <= 1200px){
+@media (width <= 1200px) {
   .aboutmesection {
     height: auto;
     padding: 5em 0;
@@ -599,7 +641,7 @@ footer {
   }
 
   .abttext {
-     text-align: center;
+    text-align: center;
   }
 
   .certificates {
@@ -623,20 +665,20 @@ footer {
     justify-content: center;
     align-items: center;
   }
- 
+
   .sliderdiv {
     max-width: 500px;
     width: 100%;
   }
 
-  #backBtn, 
+  #backBtn,
   #nextBtn {
-  max-width: 50px;
-  width: 10%;
-  max-height: 50px;
-  height: 10%;
-  margin: 5px;
-}
+    max-width: 50px;
+    width: 10%;
+    max-height: 50px;
+    height: 10%;
+    margin: 5px;
+  }
 
   .sliderdiv div {
     grid-template-columns: 100%;
@@ -645,7 +687,6 @@ footer {
   .contactContainer {
     width: 85%;
   }
-  
 }
 
 @media (width <= 900px) {
@@ -655,6 +696,13 @@ footer {
   }
   nav ul {
     display: none;
+  }
+
+  nav .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
   }
 
   .textandpicture {
@@ -696,7 +744,7 @@ footer {
     font-size: 17px;
   }
 
-  .projectsText h3{
+  .projectsText h3 {
     text-align: center;
   }
 
@@ -716,14 +764,13 @@ footer {
     gap: 1.5em;
   }
 
-
   .contactContainer {
     width: 85%;
   }
 
   .contactContainer h4,
   .contactContainer {
-   text-align: center;
+    text-align: center;
   }
 
   .circles {
@@ -733,5 +780,11 @@ footer {
   .circleCard {
     flex-direction: column;
   }
+}
 
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
 }
