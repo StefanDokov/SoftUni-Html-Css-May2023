@@ -94,8 +94,9 @@ nav .toggle_btn {
 }
 
 .landingcontainer {
+  padding: 10em 0 5em 0;
   width: 100%;
-  height: 99vh;
+  height: auto;
   background: rgb(243, 243, 243);
   display: flex;
   flex-direction: column;
@@ -183,7 +184,7 @@ nav .toggle_btn {
 }
 
 .slider {
-  width: 400px;
+  width: 370px;
   overflow: hidden;
   padding: 5px;
 }
@@ -214,10 +215,11 @@ nav .toggle_btn {
 
 .aboutmesection {
   width: 100%;
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10em 0 14em 0;
 }
 
 .abtcontainer {
@@ -630,6 +632,12 @@ footer {
 }
 
 @media (width <= 1200px) {
+
+  .abtimage {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
   .aboutmesection {
     height: auto;
     padding: 5em 0;
@@ -698,6 +706,11 @@ footer {
     display: none;
   }
 
+  .abtimage {
+    max-width: 350px;
+    max-height: 300px;
+  }
+
   nav .toggle_btn {
     display: block;
   }
@@ -724,6 +737,7 @@ footer {
   .stacks {
     flex-direction: column;
     align-items: center;
+    
   }
 
   .stacks span {
@@ -782,9 +796,31 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
+@media (width  <= 576px) {
+
+  .slider {
+    width: 270px;
+}
+
+  .abtimage {
+    max-width: 300px;
+    max-height: 250px;
+  }
+
   .dropdown_menu {
     left: 2rem;
     width: unset;
   }
+
+  
+}
+
+@media (width <= 456px) {
+  .footerContainer h4 {
+    font-size: 14px;
+  }
+  nav {
+    padding: 10px 30px;
+  }
+  
 }
