@@ -39,7 +39,7 @@ backBtn.addEventListener("click", () => {
   scrollContainer.scrollLeft -= 1040;
 });
 
-const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtn = document.querySelector('.toggle_btn');
         const toggleBtnIcon = document.querySelector('.toggle_btn i');
         const dropDownMenu = document.querySelector('.dropdown_menu');
          
@@ -49,3 +49,21 @@ const toggleBtn = document.querySelector('.toggle_btn');
 
             toggleBtnIcon.classList = isOpen? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
         }
+
+
+        // Function to toggle the menu visibility
+        function toggleMenu() {
+          dropDownMenu.classList.toggle('open');
+          const isOpen = dropDownMenu.classList.contains('open');
+          toggleBtnIcon.classList = isOpen? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        }
+  
+          // Event listener to toggle menu when any anchor is clicked
+          let anchors = document.querySelectorAll(".dropdown_menu a");
+          for (let i = 0; i < anchors.length; i++) {
+              anchors[i].addEventListener("click", toggleMenu);
+          }
+  
+         
+      
+    

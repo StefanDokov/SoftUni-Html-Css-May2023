@@ -68,8 +68,10 @@ nav .toggle_btn {
 
 .dropdown_menu a {
   text-decoration: none;
-  color: #747373;
+  color: #2e2e2e;
   font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: rgb(252, 252, 250) 1px 0 10px;
 }
 
 .dropdown_menu a:hover {
